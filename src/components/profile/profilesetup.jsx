@@ -13,7 +13,7 @@ import {
   BookOpen,
 } from "lucide-react";
 
-import "./ProfileSetup.css";
+import "./profilesetup.css";
 
 function ProfileSetup({
   user,
