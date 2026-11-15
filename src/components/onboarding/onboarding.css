@@ -1,0 +1,411 @@
+/* =================================
+   MAIN PAGE
+================================= */
+
+.onboarding-page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.onboarding-container {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* =================================
+   COMMON HERO
+================================= */
+
+.onboarding-hero {
+  width: 100%;
+  height: 440px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    #9873fa 0%,
+    #a98afa 48%,
+    #d8cafa 78%,
+    #ffffff 100%
+  );
+}
+
+.illustration-wrapper,
+.slide-two-illustrations,
+.slide-three-illustrations {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* =================================
+   PAGE 1
+================================= */
+
+.meeting-illustration {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 25px;
+  left: 3%;
+  z-index: 1;
+  display: block;
+  object-fit: contain;
+}
+
+.task-illustration {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 125px;
+  left: 20%;
+  z-index: 2;
+  display: block;
+  object-fit: contain;
+}
+
+/* =================================
+   PAGE 2
+================================= */
+
+.slide-two-hero {
+  height: 390px;
+}
+
+.working-period-image {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 15px;
+  left: 3%;
+  z-index: 1;
+  display: block;
+  object-fit: contain;
+}
+
+.working-level-image {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 145px;
+  left: 20%;
+  z-index: 2;
+  display: block;
+  object-fit: contain;
+}
+
+/* =================================
+   PAGE 3
+================================= */
+
+.slide-three-hero {
+  height: 390px;
+
+  background: linear-gradient(
+    180deg,
+    #9873fa 0%,
+    #a98afa 48%,
+    #ded3ff 80%,
+    #ffffff 100%
+  );
+}
+
+.achievement-image {
+  position: absolute;
+  width: 300px;
+  max-width: 85%;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: block;
+  object-fit: contain;
+}
+
+.task-page3-image {
+  position: absolute;
+  width: 300px;
+  max-width: 85%;
+  height: auto;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: block;
+  object-fit: contain;
+}
+
+/* =================================
+   COMMON CONTENT
+================================= */
+
+.onboarding-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 35px;
+  padding: 0 22px 25px;
+}
+
+.onboarding-content h1 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #192234;
+  margin: 0 0 9px;
+}
+
+.onboarding-content p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #46536b;
+  max-width: 330px;
+  margin: 0;
+}
+
+/* =================================
+   SLIDE INDICATORS
+================================= */
+
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.slide-indicators span {
+  width: 16px;
+  height: 5px;
+  border-radius: 10px;
+  background: #e8e2ff;
+}
+
+.slide-indicators span.active {
+  width: 24px;
+  background: #8052ff;
+}
+
+/* =================================
+   NEXT AND SKIP BUTTONS
+================================= */
+
+.onboarding-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding: 25px 28px 25px;
+}
+
+.next-button,
+.skip-button {
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.next-button {
+  background: linear-gradient(110deg, #9561ff, #6129e9);
+  color: #ffffff;
+  border: 1px solid #8052ff;
+}
+
+.skip-button {
+  background: #ffffff;
+  color: #8052ff;
+  border: 1px solid #8052ff;
+}
+
+.next-button:hover {
+  opacity: 0.92;
+}
+
+.skip-button:hover {
+  background: #f8f5ff;
+}
+
+/* =================================
+   PAGE 4
+================================= */
+
+.final-hero {
+  height: 410px;
+}
+
+.final-task-image {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 25px;
+  left: 3%;
+  z-index: 1;
+  display: block;
+  object-fit: contain;
+}
+
+.final-working-image {
+  position: absolute;
+  width: 285px;
+  max-width: 78%;
+  height: auto;
+  top: 125px;
+  left: 20%;
+  z-index: 2;
+  display: block;
+  object-fit: contain;
+}
+
+.final-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding: 25px 28px 25px;
+}
+
+.final-signin-button,
+.final-signup-button {
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.final-signin-button {
+  background: linear-gradient(110deg, #9561ff, #6129e9);
+  color: #ffffff;
+  border: 1px solid #8052ff;
+}
+
+.final-signup-button {
+  background: #ffffff;
+  color: #8052ff;
+  border: 1px solid #8052ff;
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 360px) {
+  .onboarding-hero,
+  .final-hero {
+    height: 340px;
+  }
+
+  .slide-two-hero,
+  .slide-three-hero {
+    height: 330px;
+  }
+
+  .meeting-illustration,
+  .final-task-image {
+    width: 245px;
+    left: 2%;
+  }
+
+  .task-illustration,
+  .final-working-image {
+    width: 245px;
+    left: 18%;
+    top: 115px;
+  }
+
+  .working-period-image {
+    width: 245px;
+    left: 2%;
+  }
+
+  .working-level-image {
+    width: 245px;
+    left: 18%;
+    top: 125px;
+  }
+
+  .achievement-image,
+  .task-page3-image {
+    width: 260px;
+  }
+
+  .task-page3-image {
+    top: 145px;
+  }
+
+  .onboarding-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .onboarding-content h1 {
+    font-size: 19px;
+  }
+
+  .onboarding-content p {
+    font-size: 12px;
+  }
+
+  .onboarding-actions,
+  .final-actions {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* =================================
+   DESKTOP PREVIEW
+================================= */
+
+@media (min-width: 768px) {
+  .onboarding-page {
+    background: #f3efff;
+    align-items: center;
+  }
+
+  .onboarding-container {
+    width: 390px;
+    max-width: 390px;
+    height: 90vh;
+    min-height: 650px;
+    max-height: 850px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(50, 30, 100, 0.1);
+  }
+}

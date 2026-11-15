@@ -1,0 +1,161 @@
+.profile-welcome-page {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+
+.welcome-background {
+  position: absolute;
+  inset: 0;
+  background: #e9e8ef;
+  filter: blur(5px);
+  transform: scale(1.04);
+}
+
+.welcome-dashboard-preview {
+  padding: 20px;
+}
+
+.welcome-dashboard-preview h3 {
+  color: #343044;
+}
+
+.preview-card {
+  height: 100px;
+  margin-top: 30px;
+  border-radius: 15px;
+  background: #7954f5;
+}
+
+.preview-content {
+  height: 90px;
+  margin-top: 25px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+/* Bottom Card */
+
+.welcome-bottom-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  min-height: 52%;
+
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+
+  padding: 68px 15px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile Icon */
+
+.welcome-profile-icon {
+  position: absolute;
+  top: -42px;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #8954ff, #6734ec);
+
+  color: #ffffff;
+
+  box-shadow: 0 10px 20px rgba(106, 61, 240, 0.3);
+}
+
+/* Content */
+
+.welcome-content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.welcome-content h2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: #172033;
+  margin: 0 0 14px;
+}
+
+.welcome-content p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #39465d;
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+
+.welcome-setup-button,
+.welcome-explore-button {
+  width: 100%;
+  height: 40px;
+
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.welcome-setup-button {
+  border: 2px solid #7541ff;
+
+  background: linear-gradient(
+    110deg,
+    #8953ff,
+    #5727df
+  );
+
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.welcome-explore-button {
+  border: 1.5px solid #7541ff;
+  background: #ffffff;
+  color: #7541ff;
+}
+
+.welcome-setup-button:hover,
+.welcome-explore-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (min-width: 600px) {
+  .welcome-bottom-card {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+    min-height: 430px;
+    bottom: 30px;
+    border-radius: 25px;
+    padding: 75px 30px 30px;
+  }
+}

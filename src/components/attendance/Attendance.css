@@ -1,0 +1,311 @@
+/* =====================================
+   ATTENDANCE PAGE
+===================================== */
+
+.attendance-page {
+  width: 100%;
+  max-width: 430px;
+  height: 100dvh;
+  min-height: 600px;
+  margin: 0 auto;
+  background: #f3f4f8;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #202333;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* =====================================
+   PURPLE HEADER
+===================================== */
+
+.attendance-hero {
+  height: 150px;
+  min-height: 150px;
+  background: linear-gradient(135deg, #805cff, #7047f5);
+  color: white;
+  padding: 18px 22px;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.attendance-hero-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.attendance-hero h1 {
+  font-size: 20px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.attendance-hero p {
+  font-size: 11px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.clock-decoration {
+  position: relative;
+  width: 65px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.clock-decoration svg {
+  background: #e8e3ff;
+  color: #7656ff;
+  border-radius: 50%;
+  padding: 6px;
+  transform: rotate(-12deg);
+}
+
+.clock-decoration span {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.attendance-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 0 10px 14px;
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
+}
+
+.attendance-content::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =====================================
+   WORKING HOURS SUMMARY
+===================================== */
+
+.working-summary-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 13px;
+  margin-bottom: 12px;
+}
+
+.working-summary-heading h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.working-summary-heading p {
+  margin: 5px 0 10px;
+  font-size: 10px;
+  color: #56627b;
+}
+
+
+/* =====================================
+   HOURS GRID
+===================================== */
+
+.working-hours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.working-hours-box {
+  background: #f8f8f9;
+  border: 1px solid #e9e9ed;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.working-hours-box p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 8px;
+  color: #56627b;
+  font-size: 10px;
+}
+
+.working-hours-box p svg {
+  color: #c8ced8;
+}
+
+.working-hours-box h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   CLOCK BUTTON
+===================================== */
+
+.clock-action-button {
+  width: 100%;
+  height: 42px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #8754ff, #6128ed);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(112, 71, 245, 0.15);
+}
+
+.clock-action-button.clock-out {
+  background: linear-gradient(135deg, #ff6868, #e43e4a);
+}
+
+.clock-status {
+  text-align: center;
+  color: #6651d9;
+  font-size: 10px;
+  margin: 8px 0 0;
+}
+
+
+/* =====================================
+   ATTENDANCE HISTORY
+===================================== */
+
+.attendance-history {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.attendance-record {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.attendance-record h3 {
+  margin: 0 0 11px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =====================================
+   RECORD DETAILS
+===================================== */
+
+.attendance-record-details {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 8px;
+  background: #f9fafc;
+  border: 1px solid #e9ebf0;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.attendance-detail p {
+  margin: 0 0 5px;
+  color: #526078;
+  font-size: 10px;
+}
+
+.attendance-detail h4 {
+  margin: 0;
+  color: #34415c;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   BOTTOM NAVIGATION
+===================================== */
+
+.attendance-bottom-nav {
+  width: 100%;
+  height: 54px;
+  flex-shrink: 0;
+  background: #202222;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid #7655ff;
+  z-index: 10;
+}
+
+.attendance-bottom-nav button {
+  width: 20%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.attendance-bottom-nav button.active {
+  color: #ffffff;
+}
+
+.attendance-bottom-nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 11px;
+  height: 2px;
+  background: white;
+  border-radius: 5px;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 360px) {
+
+  .attendance-detail h4 {
+    font-size: 11px;
+  }
+
+  .working-hours-box h2 {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  .attendance-page {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  }
+
+}

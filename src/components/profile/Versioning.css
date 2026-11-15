@@ -1,0 +1,276 @@
+/* MAIN PAGE */
+
+.versioning-page {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: #f3f5f9;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.versioning-header {
+  height: 115px;
+  background: #7954f5;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 22px;
+  position: relative;
+}
+
+.versioning-header h1 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.versioning-back {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  color: #7954f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* CONTENT */
+
+.versioning-content {
+  padding: 0 16px 30px;
+  margin-top: -45px;
+  position: relative;
+}
+
+/* APP CARD */
+
+.versioning-app-card {
+  background: white;
+  border-radius: 15px;
+
+  padding: 25px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.versioning-app-icon {
+  width: 80px;
+  height: 80px;
+
+  background: #f1efff;
+  color: #7954f5;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 13px;
+}
+
+.versioning-app-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #20263a;
+  margin: 0 0 7px;
+}
+
+.versioning-app-card > p {
+  font-size: 11px;
+  color: #8992a4;
+  margin: 0 0 13px;
+  text-align: center;
+}
+
+.versioning-version-badge {
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #7954f5;
+  background: #eeeaff;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+/* SECTION */
+
+.versioning-section {
+  margin-bottom: 23px;
+}
+
+.versioning-section > h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #354056;
+  margin: 0 0 11px;
+}
+
+/* DETAILS CARD */
+
+.versioning-details-card {
+  background: white;
+  border-radius: 14px;
+  padding: 5px 13px;
+}
+
+/* DETAIL ROW */
+
+.versioning-detail-row {
+  min-height: 65px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border-bottom: 1px solid #edf0f5;
+}
+
+.versioning-detail-row:last-child {
+  border-bottom: none;
+}
+
+.versioning-detail-icon {
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  background: #f1efff;
+  color: #7954f5;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.versioning-detail-text {
+  min-width: 0;
+}
+
+.versioning-detail-text p {
+  font-size: 10px;
+  color: #8992a4;
+  margin: 0 0 5px;
+}
+
+.versioning-detail-text h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #354056;
+  margin: 0;
+}
+
+/* UPDATE STATUS */
+
+.versioning-status-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.versioning-status-icon {
+  color: #23966a;
+  flex-shrink: 0;
+}
+
+.versioning-status-text h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #23966a;
+  margin: 0 0 6px;
+}
+
+.versioning-status-text p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #8992a4;
+  margin: 0;
+}
+
+/* SECURITY NOTE */
+
+.versioning-security-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  background: #eeeaff;
+  color: #7954f5;
+
+  border-radius: 10px;
+  padding: 13px;
+
+  margin-top: 5px;
+}
+
+.versioning-security-note svg {
+  flex-shrink: 0;
+}
+
+.versioning-security-note p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #55516d;
+  margin: 0;
+}
+
+/* FOOTER */
+
+.versioning-footer {
+  text-align: center;
+  font-size: 10px;
+  color: #a0a7b5;
+  margin: 25px 0 0;
+}
+
+/* DESKTOP */
+
+@media (min-width: 600px) {
+  .versioning-page {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+  .versioning-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .versioning-app-card {
+    padding: 22px 12px;
+  }
+}
